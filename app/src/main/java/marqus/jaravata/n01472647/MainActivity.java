@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, getString(R.string.a_Have_a_label_with_ur_name_center_of_screen), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(MainActivity.this, Activity2.class);
-                intent.putExtra("Name", "123");
+                intent.putExtra("Name", "Marqus Jaravata");
                 startActivity(intent);
             }
         });
