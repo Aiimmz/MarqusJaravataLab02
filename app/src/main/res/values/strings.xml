@@ -1,0 +1,16 @@
+<resources>
+
+        <string name="app_name">MarqusLab01</string>
+        <string name="action_settings">Settings</string>
+        <!-- Strings used for fragments for navigation -->
+        <string name="main_activity">First activity</string>
+        <string name="activity_2">Second activity</string>
+        <string name="next">Next</string>
+        <string name="previous">Previous</string>
+
+        <string name="a.Have_a_label_with_ur_name_center_of_screen">Marqus Jaravata</string>
+        <string name="b.Button_with_label_submit">Submit</string>
+        <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+        <string name="Name">Marqus Jaravata</string>
+
+</resources>
