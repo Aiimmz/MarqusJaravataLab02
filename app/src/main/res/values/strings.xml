@@ -12,5 +12,7 @@
         <string name="b.Button_with_label_submit">Submit</string>
         <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
         <string name="Name">Marqus Jaravata</string>
+        <string name="Close_app">Close application?</string>
+        <string name="EXIT_APP">EXIT</string>
 
 </resources>

@@ -3,9 +3,12 @@ package marqus.jaravata.n01472647;
 import android.os.Bundle;
 
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.snackbar.Snackbar;
 
 
 public class Activity2 extends AppCompatActivity {
@@ -32,7 +35,20 @@ public class Activity2 extends AppCompatActivity {
 
             default:
                 return super.onOptionsItemSelected(item);
+
+
         }
     }
+    @Override
+    public void onBackPressed() {
+        Snackbar mySnacks = Snackbar.make(findViewById(android.R.id.content), R.string.Close_app, Snackbar.LENGTH_LONG);
+        mySnacks.setAction(R.string.EXIT_APP, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        mySnacks.show();
 
+    }
 }

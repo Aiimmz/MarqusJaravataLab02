@@ -8,9 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button button_first;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,5 +31,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Snackbar mySnacks = Snackbar.make(findViewById(android.R.id.content), R.string.Close_app, Snackbar.LENGTH_LONG);
+        mySnacks.setAction(R.string.EXIT_APP, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+            });
+        mySnacks.show();
+
     }
 }
