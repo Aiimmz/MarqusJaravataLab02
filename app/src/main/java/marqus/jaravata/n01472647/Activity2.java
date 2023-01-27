@@ -2,6 +2,7 @@ package marqus.jaravata.n01472647;
 
 import android.os.Bundle;
 
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,19 @@ public class Activity2 extends AppCompatActivity {
         String pass = getIntent().getStringExtra("Name");
         textviewer.setText(pass);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home: //go back to activity main
+                finish();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }
